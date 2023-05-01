@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Wings1QuizApp/static/css/main.3ec6605b.css",
+    "main.js": "/Wings1QuizApp/static/js/main.5cccccf7.js",
+    "static/js/787.281155c2.chunk.js": "/Wings1QuizApp/static/js/787.281155c2.chunk.js",
+    "index.html": "/Wings1QuizApp/index.html",
+    "main.3ec6605b.css.map": "/Wings1QuizApp/static/css/main.3ec6605b.css.map",
+    "main.5cccccf7.js.map": "/Wings1QuizApp/static/js/main.5cccccf7.js.map",
+    "787.281155c2.chunk.js.map": "/Wings1QuizApp/static/js/787.281155c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ec6605b.css",
+    "static/js/main.5cccccf7.js"
+  ]
+}
