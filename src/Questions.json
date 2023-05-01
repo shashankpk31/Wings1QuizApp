@@ -1,0 +1,928 @@
+{
+    "questions": [
+        {
+            "question": "What is the correct way to call a user-defined function named get_area that takes two parameters (length and width) and returns the area of a rectangle?\n",
+            "options": [
+                "get_area(length, width);",
+                "area := get_area(length, width);",
+                "SELECT get_area(length, width) INTO area FROM DUAL;",
+                "Any of the above."
+            ],
+            "answer": "Any of the above.",
+            "tags": [
+                "Function"
+            ]
+        },
+        {
+            "question": "What is the advantage of using a record type over a collection type in PLSQL?\n",
+            "options": [
+                "A record type can store multiple values of different data types.",
+                "A record type can be used as a parameter for a procedure or a function.",
+                "A record type can be based on an existing table or cursor.",
+                "All of the above."
+            ],
+            "answer": "All of the above.",
+            "tags": [
+                "Record"
+            ]
+        },
+        {
+            "question": "Which of the following statements is true about packages in PLSQL?\n",
+            "options": [
+                "A package is a collection of related procedures and functions.",
+                "A package is a collection of related variables and constants.",
+                "A package is a collection of related procedures, functions, variables, constants, cursors, and types.",
+                "A package is a collection of related tables and views."
+            ],
+            "answer": "A package is a collection of related procedures, functions, variables, constants, cursors, and types.",
+            "tags": [
+                "Package"
+            ]
+        },
+        {
+            "question": "What is the output of this PLSQL block?\nDECLARE\n  x NUMBER := 10;\n  y NUMBER := 20;\nBEGIN\n  IF x > y THEN\n    DBMS_OUTPUT.PUT_LINE('x is greater than y');\n  ELSIF x < y THEN\n    DBMS_OUTPUT.PUT_LINE('x is less than y');\n  ELSE\n    DBMS_OUTPUT.PUT_LINE('x is equal to y');\n  END IF;\nEND;",
+            "options": [
+                "x is greater than y",
+                "x is less than y",
+                "x is equal to y",
+                "No output"
+            ],
+            "answer": "x is less than y",
+            "tags": [
+                "Control-Structure"
+            ]
+        },
+        {
+            "question": "What is wrong with this trigger definition?\n\nCREATE OR REPLACE TRIGGER emp_trig\nAFTER INSERT ON employees\nFOR EACH ROW\nBEGIN\n  UPDATE departments\n  SET total_sal = total_sal + :new.salary\n  WHERE department_id = :new.department_id;\nEND emp_trig;",
+            "options": [
+                "The trigger name should not end with a semicolon.",
+                "The trigger should use the REFERENCING clause to access the new values.",
+                "The trigger should use the WHEN clause to specify the condition for firing.",
+                "There is nothing wrong with the trigger definition."
+            ],
+            "answer": "There is nothing wrong with the trigger definition.",
+            "tags": [
+                "Trigger"
+            ]
+        },
+        {
+            "question": "What is the default size of a VARCHAR2 data type in PL/SQL?",
+            "options": [
+                "10 bytes",
+                "100 bytes",
+                "1000 bytes",
+                "4000 bytes"
+            ],
+            "answer": "4000 bytes"
+        },
+        {
+            "question": "Which of the following is not a PL/SQL data type?",
+            "options": [
+                "BINARY_INTEGER",
+                "BOOLEAN",
+                "DECIMAL",
+                "VARCHAR2"
+            ],
+            "answer": "DECIMAL"
+        },
+        {
+            "question": "What is the difference between a function and a procedure in PL/SQL?",
+            "options": [
+                "A function returns a value, while a procedure does not",
+                "A function can have input parameters, while a procedure cannot",
+                "A function can modify the database, while a procedure cannot",
+                "There is no difference between a function and a procedure in PL/SQL"
+            ],
+            "answer": "A function returns a value, while a procedure does not"
+        },
+        {
+            "question": "Which of the following is not a SQL aggregate function?",
+            "options": [
+                "AVG",
+                "COUNT",
+                "SUM",
+                "MAXIMUM"
+            ],
+            "answer": "MAXIMUM"
+        },
+        {
+            "question": "What is the difference between a nested table and a varray?",
+            "options": [
+                "A nested table has a fixed size, while a varray does not",
+                "A nested table can have a varying number of elements, while a varray has a fixed number of elements",
+                "A nested table can be indexed, while a varray cannot",
+                "There is no difference between a nested table and a varray"
+            ],
+            "answer": "A nested table can have a varying number of elements, while a varray has a fixed number of elements"
+        },
+        {
+            "question": "What is the difference between an implicit cursor and an explicit cursor in PL/SQL?",
+            "options": [
+                "An implicit cursor is automatically created by the system, while an explicit cursor is defined by the user",
+                "An implicit cursor is used for DML statements, while an explicit cursor is used for SELECT statements",
+                "An implicit cursor does not return any data, while an explicit cursor does",
+                "There is no difference between an implicit cursor and an explicit cursor in PL/SQL"
+            ],
+            "answer": "An implicit cursor is automatically created by the system, while an explicit cursor is defined by the user"
+        },
+        {
+            "question": "Which of the following is not a PL/SQL exception?",
+            "options": [
+                "NO_DATA_FOUND",
+                "TOO_MANY_ROWS",
+                "INVALID_NUMBER",
+                "NULL_VALUE"
+            ],
+            "answer": "NULL_VALUE"
+        },
+        {
+            "question": "What is the difference between the %ROWTYPE and %TYPE attributes in PL/SQL?",
+            "options": [
+                "The %ROWTYPE attribute is used for variables that store entire rows, while the %TYPE attribute is used for variables that store individual columns",
+                "The %ROWTYPE attribute is used for variables that store individual columns, while the %TYPE attribute is used for variables that store entire rows",
+                "There is no difference between the %ROWTYPE and %TYPE attributes in PL/SQL",
+                "The %ROWTYPE attribute is used for variables that store complex data,Type for simple data"
+            ],
+            "answer": "The %ROWTYPE attribute is used for variables that store entire rows, while the %TYPE attribute is used for variables that store individual columns"
+        },
+        {
+            "question": "What is the difference between the LIKE and the IN operators in PL/SQL?",
+            "options": [
+                "The LIKE operator is used for exact matches, while the IN operator is used for pattern matching",
+                "The IN operator is used for exact matches, while the LIKE operator is used for pattern matching",
+                "There is no difference between the LIKE and the IN operators in PL/SQL",
+                "The LIKE operator is used for comparing numeric values, while the IN operator is used for comparing string values"
+            ],
+            "answer": "The IN operator is used for exact matches, while the LIKE operator is used for pattern matching"
+        },
+        {
+            "question": "What is the difference between a trigger and a stored procedure in PL/SQL?",
+            "options": [
+                "A trigger is automatically executed by the system, while a stored procedure is manually executed by the user",
+                "A trigger is used to enforce business rules, while a stored procedure is used to encapsulate application logic",
+                "A trigger can be defined on a table, while a stored procedure cannot",
+                "There is no difference between a trigger and a stored procedure in PL/SQL"
+            ],
+            "answer": "A trigger is automatically executed by the system, while a stored procedure is manually executed by the user"
+        },
+        {
+            "question": "What is the difference between the NVL and the COALESCE functions in PL/SQL?",
+            "options": [
+                "The NVL function can accept only two arguments, while the COALESCE function can accept any number of arguments",
+                "The COALESCE function can accept only two arguments, while the NVL function can accept any number of arguments",
+                "There is no difference between the NVL and the COALESCE functions in PL/SQL",
+                "The NVL function returns NULL if both arguments are NULL, while the COALESCE function returns the first non-NULL argument"
+            ],
+            "answer": "The NVL function returns NULL if both arguments are NULL, while the COALESCE function returns the first non-NULL argument"
+        },
+        {
+            "question": "What is the difference between a database trigger and a schema trigger in PL/SQL?",
+            "options": [
+                "A database trigger is defined on a specific table, while a schema trigger is defined on the entire database",
+                "A schema trigger is defined on a specific table, while a database trigger is defined on the entire database",
+                "There is no difference between a database trigger and a schema trigger in PL/SQL",
+                "A schema trigger is used to enforce business rules, while a database trigger is used to monitor database activity"
+            ],
+            "answer": "A database trigger is defined on a specific table, while a schema trigger is defined on the entire database"
+        },
+        {
+            "question": "What is the difference between the COUNT(*) and the COUNT(column_name) functions in PL/SQL?",
+            "options": [
+                "The COUNT(*) function counts all rows, while the COUNT(column_name) function counts only non-NULL values in the specified column",
+                "The COUNT(column_name) function counts all rows, while the COUNT(*) function counts only non-NULL values in the specified column",
+                "There is no difference between the COUNT(*) and the COUNT(column_name) functions in PL/SQL",
+                "The COUNT(*) function counts all rows, while the COUNT(column_name) function counts only NULL values in the specified column"
+            ],
+            "answer": "The COUNT(*) function counts all rows, while the COUNT(column_name) function counts only non-NULL values in the specified column"
+        },
+        {
+            "question": "What is the difference between a cursor and a cursor variable in PL/SQL?",
+            "options": [
+                "A cursor variable is a static object, while a cursor is a dynamic object",
+                "A cursor is a static object, while a cursor variable is a dynamic object",
+                "There is no difference between a cursor and a cursor variable in PL/SQL",
+                "A cursor variable is a pointer to a cursor, while a cursor is a pointer to a result set"
+            ],
+            "answer": "A cursor variable is a pointer to a cursor, while a cursor is a pointer to a result set"
+        },
+        {
+            "question": "Which of the following is NOT a valid cursor type in PL/SQL?",
+            "options": [
+                "FORWARD_ONLY",
+                "SCROLL",
+                "KEYSET_DRIVEN",
+                "DYNAMIC"
+            ],
+            "answer": "DYNAMIC"
+        },
+        {
+            "question": "What is the difference between the TRUNCATE and the DELETE statements in PL/SQL?",
+            "options": [
+                "The TRUNCATE statement deletes all rows from a table, while the DELETE statement deletes only some rows based on a condition",
+                "The DELETE statement deletes all rows from a table, while the TRUNCATE statement deletes only some rows based on a condition",
+                "There is no difference between the TRUNCATE and the DELETE statements in PL/SQL",
+                "The TRUNCATE statement is used to delete data from a single table, while the DELETE statement can be used to delete data from multiple tables"
+            ],
+            "answer": "The TRUNCATE statement deletes all rows from a table, while the DELETE statement deletes only some rows based on a condition"
+        },
+        {
+            "question": "What is the difference between the VARCHAR and the VARCHAR2 data types in PL/SQL?",
+            "options": [
+                "There is no difference between the VARCHAR and the VARCHAR2 data types in PL/SQL",
+                "The VARCHAR data type can store only up to 2000 bytes, while the VARCHAR2 data type can store up to 32767 bytes",
+                "The VARCHAR data type is used for variable-length character strings, while the VARCHAR2 data type is used for fixed-length character strings",
+                "The VARCHAR data type is used for fixed-length character strings, while the VARCHAR2 data type is used for variable-length character strings"
+            ],
+            "answer": "The VARCHAR data type is used for variable-length character strings, while the VARCHAR2 data type is used for fixed-length character strings"
+        },
+        {
+            "question": "Which of the following is NOT a valid exception type in PL/SQL?",
+            "options": [
+                "NO_DATA_FOUND",
+                "TOO_MANY_ROWS",
+                "INVALID_CURSOR",
+                "DUPLICATE_KEY"
+            ],
+            "answer": "DUPLICATE_KEY"
+        },
+        {
+            "question": "What is the difference between a function and a procedure in PL/SQL?",
+            "options": [
+                "A function can return a value, while a procedure cannot",
+                "A procedure can return a value, while a function cannot",
+                "There is no difference between a function and a procedure in PL/SQL",
+                "A function is used to encapsulate application logic, while a procedure is used to enforce business rules"
+            ],
+            "answer": "A function can return a value, while a procedure cannot"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to handle exceptions in PL/SQL?",
+            "options": [
+                "Using the RAISE statement to re-raise the exception",
+                "Using the EXCEPTION_INIT pragma to associate an exception name with an Oracle error code",
+                "Using the CONTINUE statement to ignore the exception and continue with the next statement",
+                "Using the WHEN OTHERS clause to catch all exceptions that are not explicitly handled"
+            ],
+            "answer": "Using the CONTINUE statement to ignore the exception and continue with the next statement"
+        },
+        {
+            "question": "Which of the following is NOT a valid trigger type in PL/SQL?",
+            "options": [
+                "BEFORE INSERT",
+                "AFTER UPDATE",
+                "INSTEAD OF DELETE",
+                "AFTER EXECUTE"
+            ],
+            "answer": "AFTER EXECUTE"
+        },
+        {
+            "question": "Which of the following is NOT a valid pragma in PL/SQL?",
+            "options": [
+                "AUTONOMOUS_TRANSACTION",
+                "SERIALLY_REUSABLE",
+                "RESTRICT_REFERENCES",
+                "DEPRECATE"
+            ],
+            "answer": "DEPRECATE"
+        },
+        {
+            "question": "Which of the following is NOT a valid SQL*Plus command?",
+            "options": [
+                "DESCRIBE",
+                "SET",
+                "CONNECT",
+                "EXECUTE"
+            ],
+            "answer": "EXECUTE"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to declare a variable in PL/SQL?",
+            "options": [
+                "DECLARE",
+                "VAR",
+                "DEFINE",
+                "NUMBER"
+            ],
+            "answer": "NUMBER"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to execute a SQL statement in PL/SQL?",
+            "options": [
+                "Using the EXECUTE IMMEDIATE statement",
+                "Using a cursor",
+                "Using the DBMS_SQL package",
+                "Using the INSERT INTO statement"
+            ],
+            "answer": "Using the INSERT INTO statement"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to manage transactions in PL/SQL?",
+            "options": [
+                "Using the COMMIT statement to save changes to the database",
+                "Using the ROLLBACK statement to undo changes to the database",
+                "Using the SAVEPOINT statement to mark a point in the transaction",
+                "Using the TRUNCATE statement to delete all rows from a table"
+            ],
+            "answer": "Using the TRUNCATE statement to delete all rows from a table"
+        },
+        {
+            "question": "What is the difference between the %TYPE and the %ROWTYPE attributes in PL/SQL?",
+            "options": [
+                "The %TYPE attribute is used to declare variables with the same data type as a column or a variable, while the %ROWTYPE attribute is used to declare variables with the same record structure as a table or a cursor",
+                "The %ROWTYPE attribute is used to declare variables with the same data type as a column or a variable, while the %TYPE attribute is used to declare variables with the same record structure as a table or a cursor",
+                "There is no difference between the %TYPE and the %ROWTYPE attributes in PL/SQL",
+                "The %TYPE attribute is used to declare variables with the same data type as a table or a cursor, while the %ROWTYPE attribute is used to declare variables with the same record structure as a column or a variable"
+            ],
+            "answer": "The %TYPE attribute is used to declare variables with the same data type as a column or a variable, while the %ROWTYPE attribute is used to declare variables with the same record structure as a table or a cursor"
+        },
+        {
+            "question": "Which of the following is NOT a valid use of the DBMS_OUTPUT.PUT_LINE procedure?",
+            "options": [
+                "Printing the values of variables for debugging purposes",
+                "Printing messages to the user in a SQL script",
+                "Printing the results of a query to the screen",
+                "Printing information to a log file"
+            ],
+            "answer": "Printing the results of a query to the screen"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to handle a cursor in PL/SQL?",
+            "options": [
+                "Using a FOR loop",
+                "Using an explicit OPEN, FETCH, and CLOSE statements",
+                "Using the %ROWCOUNT attribute to check the number of rows fetched",
+                "Using the %TYPE attribute to declare a cursor variable"
+            ],
+            "answer": "Using the %TYPE attribute to declare a cursor variable"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to declare a function in PL/SQL?",
+            "options": [
+                "Using the FUNCTION keyword followed by the function name and the return type",
+                "Using the CREATE FUNCTION statement",
+                "Using the RETURN keyword followed by the return type and the function name",
+                "Using the AS keyword followed by the function body"
+            ],
+            "answer": "Using the RETURN keyword followed by the return type and the function name"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to call a stored procedure from within PL/SQL?",
+            "options": [
+                "Using the EXECUTE statement followed by the procedure name and the parameter values",
+                "Using a cursor",
+                "Using the CALL statement followed by the procedure name and the parameter values",
+                "Using the DBMS_SQL package"
+            ],
+            "answer": "Using the DBMS_SQL package"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to declare an exception in PL/SQL?",
+            "options": [
+                "Using the EXCEPTION keyword followed by the exception name",
+                "Using the RAISE statement to raise the exception",
+                "Using the PRAGMA EXCEPTION_INIT to associate an exception name with an Oracle error code",
+                "Using the DECLARE keyword followed by the exception name"
+            ],
+            "answer": "Using the DECLARE keyword followed by the exception name"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to handle exceptions in a stored procedure in PL/SQL?",
+            "options": [
+                "Using the RAISE statement to raise an exception",
+                "Using the EXCEPTION keyword followed by the exception name",
+                "Using the WHEN OTHERS clause to catch all exceptions that are not explicitly handled",
+                "Using the CONTINUE statement to ignore the exception and continue with the next statement"
+            ],
+            "answer": "Using the EXCEPTION keyword followed by the exception name"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to use the BULK COLLECT feature in PL/SQL?",
+            "options": [
+                "To fetch multiple rows into a collection at once",
+                "To insert multiple rows into a table at once",
+                "To update multiple rows in a table at once",
+                "To delete multiple rows from a table at once"
+            ],
+            "answer": "To update multiple rows in a table at once"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to use the UTL_FILE package in PL/SQL?",
+            "options": [
+                "To write data to a file",
+                "To read data from a file",
+                "To create a directory object for the UTL_FILE package"
+            ],
+            "answer": "To create a directory object for the UTL_FILE package"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to handle transactions in PL/SQL?",
+            "options": [
+                "Using the COMMIT statement to commit a transaction",
+                "Using the ROLLBACK statement to undo a transaction",
+                "Using the SAVEPOINT statement to create a named point in a transaction",
+                "Using the BEGIN TRANSACTION statement to start a new transaction"
+            ],
+            "answer": "Using the BEGIN TRANSACTION statement to start a new transaction"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to define a trigger in PL/SQL?",
+            "options": [
+                "Using the CREATE TRIGGER statement",
+                "Using the AFTER or BEFORE keywords to specify the timing of the trigger",
+                "Using the INSTEAD OF keyword to specify that the trigger should replace the triggering event",
+                "Using the INSTEAD keyword to specify that the trigger should execute instead of the triggering event"
+            ],
+            "answer": "Using the INSTEAD keyword to specify that the trigger should execute instead of the triggering event"
+        },
+        {
+            "question": "Which of the following is a valid way to handle exceptions in PL/SQL?",
+            "options": [
+                "Using the RAISE statement to raise an exception",
+                "Using the EXCEPTION keyword to specify an exception handler",
+                "Using the WHEN OTHERS keyword to specify a catch-all exception handler",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What does the %ROWTYPE attribute do in PL/SQL?",
+            "options": [
+                "It specifies the data type of a variable",
+                "It specifies the type of a cursor",
+                "It specifies the type of a record based on a table or cursor",
+                "It specifies the type of a trigger"
+            ],
+            "answer": "It specifies the type of a record based on a table or cursor"
+        },
+        {
+            "question": "Which of the following is NOT a valid type of PL/SQL loop?",
+            "options": [
+                "FOR loop",
+                "WHILE loop",
+                "REPEAT loop",
+                "DO WHILE loop"
+            ],
+            "answer": "DO WHILE loop"
+        },
+        {
+            "question": "Which of the following is NOT a valid type of PL/SQL collection?",
+            "options": [
+                "Nested table",
+                "Varray",
+                "Record",
+                "Associative array"
+            ],
+            "answer": "Record"
+        },
+        {
+            "question": "Which of the following is NOT a valid PL/SQL data type?",
+            "options": [
+                "BOOLEAN",
+                "BINARY_INTEGER",
+                "CHARACTER",
+                "DECIMAL"
+            ],
+            "answer": "DECIMAL"
+        },
+        {
+            "question": "What is the purpose of the DBMS_OUTPUT.PUT_LINE procedure in PL/SQL?",
+            "options": [
+                "To output a message to the console",
+                "To write data to a file",
+                "To execute a SQL statement",
+                "To declare a variable"
+            ],
+            "answer": "To output a message to the console"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to declare a variable in PL/SQL?",
+            "options": [
+                "Using the DECLARE keyword",
+                "Using the %TYPE attribute",
+                "Using the %ROWTYPE attribute",
+                "Using the VAR keyword"
+            ],
+            "answer": "Using the VAR keyword"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a cursor in PL/SQL?",
+            "options": [
+                "Using the DECLARE CURSOR statement",
+                "Using the OPEN CURSOR statement",
+                "Using the FETCH statement",
+                "Using the CLOSE statement"
+            ],
+            "answer": "Using the DECLARE CURSOR statement"
+        },
+        {
+            "question": "What is the purpose of the DBMS_SCHEDULER package in PL/SQL?",
+            "options": [
+                "To create and manage database jobs",
+                "To create and manage database triggers",
+                "To create and manage database views",
+                "To create and manage database indexes"
+            ],
+            "answer": "To create and manage database jobs"
+        },
+        {
+            "question": "Which of the following is NOT a valid type of PL/SQL subprogram?",
+            "options": [
+                "Procedure",
+                "Function",
+                "Trigger",
+                "Package"
+            ],
+            "answer": "Trigger"
+        },
+        {
+            "question": "What is the purpose of the RETURNING clause in a SQL statement?",
+            "options": [
+                "To return the value of a column or expression from an INSERT, UPDATE, or DELETE statement",
+                "To return the value of a variable from a PL/SQL block",
+                "To return the result of a SQL query",
+                "To return the current value of a sequence"
+            ],
+            "answer": "To return the value of a column or expression from an INSERT, UPDATE, or DELETE statement"
+        },
+        {
+            "question": "Which of the following is NOT a valid type of PL/SQL trigger?",
+            "options": [
+                "BEFORE trigger",
+                "AFTER trigger",
+                "INSTEAD OF trigger",
+                "LOOP trigger"
+            ],
+            "answer": "LOOP trigger"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a constant in PL/SQL?",
+            "options": [
+                "Using the CONSTANT keyword",
+                "Using the %CONSTANT attribute",
+                "Using the := operator",
+                "Constants cannot be declared in PL/SQL"
+            ],
+            "answer": "Using the := operator"
+        },
+        {
+            "question": "Which of the following is a valid way to handle exceptions in PL/SQL?",
+            "options": [
+                "Using the RAISE statement to raise an exception",
+                "Using the EXCEPTION keyword to specify an exception handler",
+                "Using the WHEN OTHERS keyword to specify a catch-all exception handler",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is the purpose of the DBMS_LOB package in PL/SQL?",
+            "options": [
+                "To manage large objects (LOBs) such as images and videos",
+                "To manage transactions",
+                "To manage database links",
+                "To manage user-defined functions"
+            ],
+            "answer": "To manage large objects (LOBs) such as images and videos"
+        },
+        {
+            "question": "Which of the following is NOT a valid type of PL/SQL exception?",
+            "options": [
+                "Predefined exception",
+                "User-defined exception",
+                "System-defined exception",
+                "All of the above are valid types of PL/SQL exception"
+            ],
+            "answer": "All of the above are valid types of PL/SQL exception"
+        },
+        {
+            "question": "What is the purpose of the UTL_FILE package in PL/SQL?",
+            "options": [
+                "To read from and write to files on the file system",
+                "To perform mathematical calculations",
+                "To manage user-defined types",
+                "To manage database links"
+            ],
+            "answer": "To read from and write to files on the file system"
+        },
+        {
+            "question": "Which of the following is a valid way to create a view in PL/SQL?",
+            "options": [
+                "Using the CREATE VIEW statement",
+                "Using the SELECT statement",
+                "Using the DECLARE statement",
+                "Using the INSERT statement"
+            ],
+            "answer": "Using the CREATE VIEW statement"
+        },
+        {
+            "question": "Which of the following is a valid way to declare an exception in PL/SQL?",
+            "options": [
+                "Using the EXCEPTION keyword",
+                "Using the DECLARE EXCEPTION statement",
+                "Using the RAISE statement",
+                "Using the %EXCEPTION attribute"
+            ],
+            "answer": "Using the DECLARE EXCEPTION statement"
+        },
+        {
+            "question": "What is the purpose of the DBMS_SQL package in PL/SQL?",
+            "options": [
+                "To execute dynamic SQL statements",
+                "To execute static SQL statements",
+                "To manage database objects",
+                "To perform data transformations"
+            ],
+            "answer": "To execute dynamic SQL statements"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a cursor in PL/SQL?",
+            "options": [
+                "Using the DECLARE CURSOR statement",
+                "Using the OPEN statement",
+                "Using the FETCH statement",
+                "Using the CLOSE statement"
+            ],
+            "answer": "Using the DECLARE CURSOR statement"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to use a cursor in PL/SQL?",
+            "options": [
+                "Using the FETCH statement to retrieve the next row",
+                "Using the CLOSE statement to close the cursor",
+                "Using the SELECT statement to retrieve the next row",
+                "Using the OPEN statement to open the cursor"
+            ],
+            "answer": "Using the SELECT statement to retrieve the next row"
+        },
+        {
+            "question": "What is the purpose of the DBMS_SCHEDULER package in PL/SQL?",
+            "options": [
+                "To schedule jobs and tasks in the database",
+                "To manage transactions",
+                "To manage database links",
+                "To manage user-defined types"
+            ],
+            "answer": "To schedule jobs and tasks in the database"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a variable in PL/SQL?",
+            "options": [
+                "Using the VAR keyword",
+                "Using the VARIABLE keyword",
+                "Using the DECLARE keyword",
+                "Using the : operator"
+            ],
+            "answer": "Using the DECLARE keyword"
+        },
+        {
+            "question": "Which of the following is a valid way to handle errors in PL/SQL?",
+            "options": [
+                "Using the RAISE statement to raise an exception",
+                "Using the EXCEPTION keyword to specify an exception handler",
+                "Using the WHEN OTHERS keyword to specify a catch-all exception handler",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is the purpose of the DBMS_OUTPUT package in PL/SQL?",
+            "options": [
+                "To output messages from PL/SQL code",
+                "To manage large objects (LOBs)",
+                "To manage user-defined types",
+                "To manage database links"
+            ],
+            "answer": "To output messages from PL/SQL code"
+        },
+        {
+            "question": "Which of the following is NOT a valid type of PL/SQL loop?",
+            "options": [
+                "FOR loop",
+                "WHILE loop",
+                "REPEAT loop",
+                "DO loop"
+            ],
+            "answer": "DO loop"
+        },
+        {
+            "question": "What is the purpose of the DBMS_SQLTUNE package in PL/SQL?",
+            "options": [
+                "To tune SQL statements for better performance",
+                "To execute SQL statements",
+                "To manage database objects",
+                "To perform data transformations"
+            ],
+            "answer": "To tune SQL statements for better performance"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a function in PL/SQL?",
+            "options": [
+                "Using the FUNCTION keyword",
+                "Using the DECLARE keyword",
+                "Using the VAR keyword",
+                "Using the VARIABLE keyword"
+            ],
+            "answer": "Using the FUNCTION keyword"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a trigger in PL/SQL?",
+            "options": [
+                "Using the DECLARE TRIGGER statement",
+                "Using the CREATE TRIGGER statement",
+                "Using the DECLARE statement",
+                "Using the TRIGGER statement"
+            ],
+            "answer": "Using the CREATE TRIGGER statement"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a package in PL/SQL?",
+            "options": [
+                "Using the CREATE PACKAGE statement",
+                "Using the DECLARE PACKAGE statement",
+                "Using the VAR PACKAGE statement",
+                "Using the VARIABLE PACKAGE statement"
+            ],
+            "answer": "Using the CREATE PACKAGE statement"
+        },
+        {
+            "question": "What is the purpose of the DBMS_LOCK package in PL/SQL?",
+            "options": [
+                "To manage locks and concurrency",
+                "To manage user-defined types",
+                "To perform data transformations",
+                "To tune SQL statements for better performance"
+            ],
+            "answer": "To manage locks and concurrency"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a procedure in PL/SQL?",
+            "options": [
+                "Using the PROCEDURE keyword",
+                "Using the DECLARE keyword",
+                "Using the VAR keyword",
+                "Using the VARIABLE keyword"
+            ],
+            "answer": "Using the PROCEDURE keyword"
+        },
+        {
+            "question": "What is the purpose of the DBMS_SQL package in PL/SQL?",
+            "options": [
+                "To execute dynamic SQL statements",
+                "To manage transactions",
+                "To manage database links",
+                "To manage user-defined types"
+            ],
+            "answer": "To execute dynamic SQL statements"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a cursor in PL/SQL?",
+            "options": [
+                "Using the DECLARE CURSOR statement",
+                "Using the OPEN statement",
+                "Using the FETCH statement",
+                "Using the CLOSE statement"
+            ],
+            "answer": "Using the DECLARE CURSOR statement"
+        },
+        {
+            "question": "Which of the following is NOT a valid way to use a cursor in PL/SQL?",
+            "options": [
+                "Using the FETCH statement to retrieve the next row",
+                "Using the CLOSE statement to close the cursor",
+                "Using the SELECT statement to retrieve the next row",
+                "Using the OPEN statement to open the cursor"
+            ],
+            "answer": "Using the SELECT statement to retrieve the next row"
+        },
+        {
+            "question": "What is the purpose of the DBMS_SCHEDULER package in PL/SQL?",
+            "options": [
+                "To schedule jobs and tasks in the database",
+                "To manage transactions",
+                "To manage database links",
+                "To manage user-defined types"
+            ],
+            "answer": "To schedule jobs and tasks in the database"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a variable in PL/SQL?",
+            "options": [
+                "Using the VAR keyword",
+                "Using the VARIABLE keyword",
+                "Using the DECLARE keyword",
+                "Using the : operator"
+            ],
+            "answer": "Using the DECLARE keyword"
+        },
+        {
+            "question": "Which of the following is a valid way to handle errors in PL/SQL?",
+            "options": [
+                "Using the RAISE statement to raise an exception",
+                "Using the EXCEPTION keyword to specify an exception handler",
+                "Using the WHEN OTHERS keyword to specify a catch-all exception handler",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is the purpose of the DBMS_OUTPUT package in PL/SQL?",
+            "options": [
+                "To output messages from PL/SQL code",
+                "To manage locks and concurrency",
+                "To manage database links",
+                "To manage user-defined types"
+            ],
+            "answer": "To output messages from PL/SQL code"
+        },
+        {
+            "question": "Which of the following is NOT a valid type of exception in PL/SQL?",
+            "options": [
+                "Predefined exceptions",
+                "User-defined exceptions",
+                "System-defined exceptions",
+                "Language-defined exceptions"
+            ],
+            "answer": "Language-defined exceptions"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a function in PL/SQL?",
+            "options": [
+                "Using the FUNCTION keyword",
+                "Using the DECLARE keyword",
+                "Using the VAR keyword",
+                "Using the VARIABLE keyword"
+            ],
+            "answer": "Using the FUNCTION keyword"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a trigger in PL/SQL?",
+            "options": [
+                "Using the CREATE TRIGGER statement",
+                "Using the DECLARE TRIGGER statement",
+                "Using the VAR TRIGGER statement",
+                "Using the VARIABLE TRIGGER statement"
+            ],
+            "answer": "Using the CREATE TRIGGER statement"
+        },
+        {
+            "question": "What is the purpose of the UTL_FILE package in PL/SQL?",
+            "options": [
+                "To read and write files on the server",
+                "To manage transactions",
+                "To manage database links",
+                "To manage user-defined types"
+            ],
+            "answer": "To read and write files on the server"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a table in PL/SQL?",
+            "options": [
+                "Using the CREATE TABLE statement",
+                "Using the DECLARE TABLE statement",
+                "Using the VAR TABLE statement",
+                "Using the VARIABLE TABLE statement"
+            ],
+            "answer": "Using the CREATE TABLE statement"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a view in PL/SQL?",
+            "options": [
+                "Using the CREATE VIEW statement",
+                "Using the DECLARE VIEW statement",
+                "Using the VAR VIEW statement",
+                "Using the VARIABLE VIEW statement"
+            ],
+            "answer": "Using the CREATE VIEW statement"
+        },
+        {
+            "question": "What is the purpose of the DBMS_METADATA package in PL/SQL?",
+            "options": [
+                "To retrieve metadata about database objects",
+                "To manage transactions",
+                "To manage database links",
+                "To manage user-defined types"
+            ],
+            "answer": "To retrieve metadata about database objects"
+        },
+        {
+            "question": "Which of the following is a valid way to declare a trigger in PL/SQL?",
+            "options": [
+                "Using the CREATE TRIGGER statement",
+                "Using the DECLARE TRIGGER statement",
+                "Using the VAR TRIGGER statement",
+                "Using the VARIABLE TRIGGER statement"
+            ],
+            "answer": "Using the CREATE TRIGGER statement"
+        },
+        {
+            "question": "What is the purpose of the DBMS_APPLICATION_INFO package in PL/SQL?",
+            "options": [
+                "To set client information for tracing and monitoring",
+                "To manage transactions",
+                "To manage database links",
+                "To manage user-defined types"
+            ],
+            "answer": "To set client information for tracing and monitoring"
+        }
+    ]
+}
